@@ -52,6 +52,10 @@ double sizeBoxXLHeight(BuildContext context){
   return (MediaQuery.of(context).size.height)*0.04;
 }
 
+double sizeBoxLHeight(BuildContext context){
+  return (MediaQuery.of(context).size.height)*0.02;
+}
+
 
 
 double loginTextContHeight(BuildContext context) {
@@ -64,4 +68,9 @@ double loginTextContWidth(BuildContext context) {
 
 double loginTextContMargin(BuildContext context) {
   return (getPageWidth(context) * 0.009) ;
+}
+
+
+double getPageHalf(BuildContext context) {
+  return (getPageWidth(context) * 0.48) ;
 }

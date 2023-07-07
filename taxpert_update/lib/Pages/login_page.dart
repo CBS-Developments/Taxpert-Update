@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:stroke_text/stroke_text.dart';
 import 'package:taxpert_update/Components/login_glass_box.dart';
+import 'package:taxpert_update/Components/login_textfeild.dart';
 import 'package:taxpert_update/Sizes/login_page_sizes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -121,6 +122,14 @@ class LoginPage extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontSize: getFontxXL(context)),
                         ),
+
+                        SizedBox(
+                          height: sizeBoxXLHeight(context),
+                        ),
+
+                        LoginTextField(labelText: "labelText",)
+
+
                       ],
                     ),
                   ),

@@ -39,6 +39,16 @@ double calContHeight(BuildContext context) {
   return (getPageHeight(context) * 0.1) ;
 }
 
+double textFHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.1) ;
+}
+
+double textFWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.3) ;
+
+}
+
+
 double imagePadding(BuildContext context) {
   return (getPageHeight(context) * 0.01);
 }

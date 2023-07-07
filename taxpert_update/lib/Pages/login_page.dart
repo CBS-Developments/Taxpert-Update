@@ -127,7 +127,13 @@ class LoginPage extends StatelessWidget {
                           height: sizeBoxXLHeight(context),
                         ),
 
-                        LoginTextField(labelText: "labelText",)
+                        LoginTextField(labelText: "User Name",),
+
+                        SizedBox(
+                          height: sizeBoxXLHeight(context),
+                        ),
+
+                        LoginTextField(labelText: "Password",),
 
 
                       ],

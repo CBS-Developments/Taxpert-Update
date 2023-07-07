@@ -5,9 +5,12 @@ import 'package:flutter/material.dart';
 import '../Sizes/login_page_sizes.dart';
 
 class LoginGlassBox extends StatelessWidget {
-  final Widget child;
+  final child;
+  final height;
+  final width;
 
-  const LoginGlassBox({Key? key, required this.child}) : super(key: key);
+
+  const LoginGlassBox({Key? key, required this.child, this.height, this.width}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +21,9 @@ class LoginGlassBox extends StatelessWidget {
 
         borderRadius: BorderRadius.circular(40),
         child: Container(
-          width: ContWidth(context),
-          height: imageContHeight(context),
+
+          width: width,
+          height: height,
           // color: Colors.white,
           child: Stack(
             children: [
@@ -34,15 +38,16 @@ class LoginGlassBox extends StatelessWidget {
 
               //gradient effect
               Container(
+
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
+                  border: Border.all(color: Colors.green, width: 3),
                     borderRadius: BorderRadius.circular(40),
                     gradient: LinearGradient(
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
                       Colors.white.withOpacity(0.5),
-                      Colors.white.withOpacity(0.1),
+                      Colors.white.withOpacity(0.25),
                     ]),
                 ),
               ),

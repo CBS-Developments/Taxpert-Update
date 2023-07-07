@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:stroke_text/stroke_text.dart';
 import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Sizes/login_page_sizes.dart';
 
@@ -9,18 +12,27 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration:
-        BoxDecoration(
-            image: DecorationImage(
-                image: Image.asset("Images/back.jpg").image, fit: BoxFit.cover),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: Image.asset("Images/back2.jpg").image, fit: BoxFit.cover),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              color: Colors.grey,
               width: getPageHalf(context),
               height: getPageHeight(context),
+              child: Stack(
+                children: [
+                  BackdropFilter(
+                    filter: ImageFilter.blur(
+                      sigmaX: 1,
+                      sigmaY: 1,
+                    ),
+                    child: Container(),
+                  ),
+                ],
+              ),
             ),
 
             VerticalDivider(
@@ -29,7 +41,6 @@ class LoginPage extends StatelessWidget {
               endIndent: 20,
               indent: 20,
               color: Colors.black,
-
             ),
 
             // Container(
@@ -41,28 +52,48 @@ class LoginPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-
                 SizedBox(
                   height: sizeBoxXLHeight(context),
                 ),
 
-                Text('Go Ahead & Login',
-                  style: TextStyle(
+                // Text('Go Ahead & Login',
+                //   style: TextStyle(
+                //
+                //       fontWeight: FontWeight.bold,
+                //       color: Colors.green,
+                //       fontSize:getFontXXXL(context)
+                //   ),),
+
+                StrokeText(
+                  text: "Go Ahead & Login",
+                  textStyle: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                      fontSize:getFontXXXL(context)
-                  ),),
+                      fontSize: getFontXXXL(context),
+                      color: Colors.green),
+                  strokeColor: Colors.white,
+                  strokeWidth: 2.5,
+                ),
 
                 SizedBox(
                   height: sizeBoxLHeight(context),
                 ),
 
-                Text('It takes a couples of seconds to login your account',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
-                      fontSize:getFontXL(context)
-                  ),),
+                // Text('It takes a couples of seconds to login your account',
+                //   style: TextStyle(
+                //       fontWeight: FontWeight.bold,
+                //       color: Colors.black87,
+                //       fontSize:getFontXL(context)
+                //   ),),
+
+                StrokeText(
+                  text: "It takes a couples of seconds to login your account",
+                  textStyle: TextStyle(
+                      // fontWeight: FontWeight.bold,
+                      fontSize: getFontXL(context),
+                      color: Colors.white),
+                  strokeColor: Colors.black,
+                  strokeWidth: 00.8,
+                ),
 
                 SizedBox(
                   height: sizeBoxXLHeight(context),
@@ -75,27 +106,46 @@ class LoginPage extends StatelessWidget {
                 // ),
 
                 LoginGlassBox(
+                  width: ContWidth(context),
+                  height: imageContHeight(context),
                   child: Center(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: sizeBoxLHeight(context),
-                      ),
-
-                      Text('User Login',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: getFontxXL(context)
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: sizeBoxXLHeight(context),
                         ),
-                      ),
-                    ],
+                        Text(
+                          'User Login',
+                          style: TextStyle(
+                            color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: getFontxXL(context)),
+                        ),
+                      ],
+                    ),
                   ),
-                ),)
+                ),
+
+                SizedBox(
+                  height: sizeBoxLHeight(context),
+                ),
 
 
+                LoginGlassBox(
+                  width: ContWidth(context),
+                  height: calContHeight(context),
+                  child: Center(
+                    child: Text(
+                      'Tax Calculator',
+                      style: TextStyle(
+                        color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: getFontxXL(context)),
+                    ),
+                  ),
+                )
               ],
             )
-
           ],
         ),
       ),

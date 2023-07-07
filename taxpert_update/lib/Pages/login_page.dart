@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Sizes/login_page_sizes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -67,11 +68,29 @@ class LoginPage extends StatelessWidget {
                   height: sizeBoxXLHeight(context),
                 ),
 
-                Container(
-                  width: getPageHalf(context),
-                  height: getPageHeight(context),
-                  color: Colors.grey,
-                ),
+                // Container(
+                //   width: getPageHalf(context),
+                //   height: getPageHeight(context),
+                //   color: Colors.grey,
+                // ),
+
+                LoginGlassBox(
+                  child: Center(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: sizeBoxLHeight(context),
+                      ),
+
+                      Text('User Login',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: getFontxXL(context)
+                        ),
+                      ),
+                    ],
+                  ),
+                ),)
 
 
               ],

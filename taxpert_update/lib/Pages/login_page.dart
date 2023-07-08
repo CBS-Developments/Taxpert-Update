@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:stroke_text/stroke_text.dart';
 import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Components/login_textfeild.dart';
+import 'package:taxpert_update/Pages/calculator_page.dart';
 import 'package:taxpert_update/Sizes/login_page_sizes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -146,16 +147,23 @@ class LoginPage extends StatelessWidget {
                 ),
 
 
-                LoginGlassBox(
-                  width: ContWidth(context),
-                  height: calContHeight(context),
-                  child: Center(
-                    child: Text(
-                      'Tax Calculator',
-                      style: TextStyle(
-                        color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: getFontxXL(context)),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CalculatorPage()),
+                    );},
+                  child: LoginGlassBox(
+                    width: ContWidth(context),
+                    height: calContHeight(context),
+                    child: Center(
+                      child: Text(
+                        'Tax Calculator',
+                        style: TextStyle(
+                          color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: getFontxXL(context)),
+                      ),
                     ),
                   ),
                 )

@@ -14,7 +14,7 @@ class LoginTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(textFMargin(context)),
-      color: Colors.white,
+      color: Colors.white70,
       width: textFWidth(context),
       height: textFHeight(context),
 

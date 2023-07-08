@@ -22,6 +22,10 @@ double getFontxXL(BuildContext context) {
   return (getPageWidth(context) * 0.0063) * (getPageHeight(context) * 0.0063);
 }
 
+double getFontL(BuildContext context) {
+  return (getPageWidth(context) * 0.0045) * (getPageHeight(context) * 0.0045);
+}
+
 double loginContWidth(BuildContext context) {
   return (getPageWidth(context) * 0.77) ;
 }

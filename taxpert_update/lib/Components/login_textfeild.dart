@@ -14,7 +14,7 @@ class LoginTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(textFMargin(context)),
-      color: Colors.white30,
+      color: Colors.white,
       width: textFWidth(context),
       height: textFHeight(context),
 
@@ -22,8 +22,14 @@ class LoginTextField extends StatelessWidget {
       textInputAction: TextInputAction.next,
       controller: controller,
       decoration: InputDecoration(
-        border: OutlineInputBorder(),
+        enabledBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.green),
+        ),
         labelText: labelText,
+        labelStyle: TextStyle(color: Colors.green,fontSize: getFontL(context))
       ),
     ),
       );

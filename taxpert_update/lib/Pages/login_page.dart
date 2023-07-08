@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:stroke_text/stroke_text.dart';
+import 'package:taxpert_update/Components/login_button.dart';
 import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Components/login_textfeild.dart';
 import 'package:taxpert_update/Pages/calculator_page.dart';
@@ -135,6 +136,17 @@ class LoginPage extends StatelessWidget {
                         ),
 
                         LoginTextField(labelText: "Password",),
+
+                        SizedBox(
+                          height: sizeBoxXLHeight(context),
+                        ),
+
+                        LoginButton(
+                            childText:'Login',
+                          onTap: (){},
+                        ),
+
+
 
 
                       ],

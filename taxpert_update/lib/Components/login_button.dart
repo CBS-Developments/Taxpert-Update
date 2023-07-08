@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Sizes/cal_page_sizes.dart';
+import '../Sizes/login_page_sizes.dart';
 
 class LoginButton extends StatelessWidget {
 
@@ -13,13 +14,13 @@ class LoginButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: buttonHeight(context),
-        width: buttonWidth(context),
+        height: loginButtonHeight(context),
+        width: loginButtonWidth(context),
         decoration: BoxDecoration(
           color: Colors.green,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: Colors.white,
+            color: Colors.black,
             width: 1.0,
           ),
         ),
@@ -27,9 +28,9 @@ class LoginButton extends StatelessWidget {
           child: Text(
             childText,
             style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: buttonFont(context),
+              color: Colors.black,
+              // fontWeight: FontWeight.bold,
+              fontSize: getFontL(context),
             ),
           ),
         ),

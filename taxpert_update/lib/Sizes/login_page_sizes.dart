@@ -96,3 +96,11 @@ double loginTextContMargin(BuildContext context) {
 double getPageHalf(BuildContext context) {
   return (getPageWidth(context) * 0.48) ;
 }
+
+double loginButtonHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.07) ;
+}
+
+double loginButtonWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.10) ;
+}

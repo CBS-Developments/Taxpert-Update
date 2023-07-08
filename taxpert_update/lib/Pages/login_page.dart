@@ -146,6 +146,42 @@ class LoginPage extends StatelessWidget {
                           onTap: (){},
                         ),
 
+                        SizedBox(
+                          height: sizeBoxLHeight(context),
+                        ),
+
+                        Container(
+                          width: ContWidth(context),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                            StrokeText(
+                              text: "Don't have an Account?  ",
+                              textStyle: TextStyle(
+                                // fontWeight: FontWeight.bold,
+                                  fontSize: getFontXL(context),
+                                  color: Colors.black),
+                              strokeColor: Colors.black,
+                              strokeWidth: 00.8,
+                            ),
+
+                            GestureDetector(
+                              onTap: (){},
+                              child: StrokeText(
+                                text: "Create Account",
+                                textStyle: TextStyle(
+                                  // fontWeight: FontWeight.bold,
+                                    fontSize: getFontXL(context),
+                                    color: Colors.white),
+                                strokeColor: Colors.black,
+                                strokeWidth: 00.8,
+                              ),
+                            ),
+
+
+                          ],),
+                        )
 
 
 

@@ -45,6 +45,10 @@ double textFHeight(BuildContext context) {
 
 double textFWidth(BuildContext context) {
   return (getPageWidth(context) * 0.3) ;
+}
+
+double textFMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.0075) ;
 
 }
 

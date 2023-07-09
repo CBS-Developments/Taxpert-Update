@@ -145,6 +145,7 @@ class LoginPage extends StatelessWidget {
                         LoginButton(
                             childText:'Login',
                           onTap: (){},
+                          width: loginButtonWidth(context),
                         ),
 
                         SizedBox(

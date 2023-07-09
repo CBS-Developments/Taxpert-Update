@@ -7,7 +7,8 @@ class LoginButton extends StatelessWidget {
 
   final Function()? onTap;
   final String childText;
-  const LoginButton({Key? key, this.onTap, required this.childText}) : super(key: key);
+  final width;
+  const LoginButton({Key? key, this.onTap, required this.childText, this.width}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,8 @@ class LoginButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: loginButtonHeight(context),
-        width: loginButtonWidth(context),
+        // width: loginButtonWidth(context),
+        width: width,
         decoration: BoxDecoration(
           color: Colors.green,
           borderRadius: BorderRadius.circular(20),

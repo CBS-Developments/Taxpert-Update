@@ -8,7 +8,6 @@ double createContHeight(BuildContext context) {
 
 double createContWidth(BuildContext context) {
   return (getPageWidth(context) * 0.4) ;
-
 }
 
 double createButtonWidth(BuildContext context) {

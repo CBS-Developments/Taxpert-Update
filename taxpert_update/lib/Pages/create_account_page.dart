@@ -73,13 +73,13 @@ class CreateAccount extends StatelessWidget {
                         height: sizeBoxXLHeight(context),
                       ),
 
-                      LoginTextField(labelText: "User Name",),
+                      LoginTextField(labelText: "First Name",),
 
                       SizedBox(
                         height: sizeBoxXLHeight(context),
                       ),
 
-                      LoginTextField(labelText: "Password",),
+                      LoginTextField(labelText: "Last Name",),
 
                       SizedBox(
                         height: sizeBoxXLHeight(context),

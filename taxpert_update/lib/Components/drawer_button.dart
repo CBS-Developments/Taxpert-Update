@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:taxpert_update/Sizes/dashboard_sizes.dart';
 
+import 'colors.dart';
+
 class CustomDrawerButton extends StatelessWidget {
   final Function()? onTap;
   final Widget child;
@@ -17,8 +19,9 @@ class CustomDrawerButton extends StatelessWidget {
          width: drawerButtonWidth(context),
         decoration: BoxDecoration(
           color: fillColor,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(5),
           border: Border.all(
+            // color: AppColor.highLightGreen,
             color: Colors.black,
             width: 1.0,
           ),

@@ -28,6 +28,24 @@ double drawerButtonHeight(BuildContext context) {
   return (getPageHeight(context) * 0.05) ;
 }
 
+double drawerIconHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.025) ;
+}
+
+double dashIconHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.045) ;
+}
+
+double drawerIconWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.014) ;
+}
+
+double drawerIconMargin(BuildContext context) {
+  return (getPageWidth(context) * 0.004) ;
+}
+
+
+
 double miniBoxHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.01) ;
+  return (getPageHeight(context) * 0.012) ;
 }

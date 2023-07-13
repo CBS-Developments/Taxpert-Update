@@ -41,7 +41,7 @@ double drawerIconWidth(BuildContext context) {
 }
 
 double drawerIconMargin(BuildContext context) {
-  return (getPageWidth(context) * 0.004) ;
+  return (getPageWidth(context) * 0.003) ;
 }
 
 

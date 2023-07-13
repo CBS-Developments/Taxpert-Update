@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taxpert_update/Sizes/dashboard_sizes.dart';
 
-import 'colors.dart';
+import '../Components/colors.dart';
 
 class CustomDrawerButton extends StatelessWidget {
   final Function()? onTap;

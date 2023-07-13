@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Pages/dashboard.dart';
 import 'package:taxpert_update/Pages/login_page.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      // home: LoginPage(),
+      home: DashboardPage(),
     );
   }
 }

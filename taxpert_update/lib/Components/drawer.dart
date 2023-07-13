@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Components/drawer_button.dart';
 import 'package:taxpert_update/Sizes/cal_page_sizes.dart';
 import 'package:taxpert_update/Sizes/dashboard_sizes.dart';
 
@@ -12,6 +13,14 @@ class DrawerContainer extends StatelessWidget {
       color: Colors.black,
       width: drawerWidth(context),
       height: getPageHeight(context),
+      child:Column(
+        children: [
+          SizedBox(height: miniBoxHeight(context),),
+
+          CustomDrawerButton(child: Text(''), fillColor: Colors.white)
+
+        ],
+      ),
     );
   }
 }

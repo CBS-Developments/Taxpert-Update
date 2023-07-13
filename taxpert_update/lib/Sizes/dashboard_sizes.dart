@@ -19,3 +19,15 @@ double appBarIconSize(BuildContext context) {
 double drawerWidth(BuildContext context) {
   return (getPageWidth(context) * 0.15) ;
 }
+
+double drawerButtonWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.14) ;
+}
+
+double drawerButtonHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}
+
+double miniBoxHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.01) ;
+}

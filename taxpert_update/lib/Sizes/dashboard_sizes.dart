@@ -1,17 +1,13 @@
-import 'package:flutter/material.dart';
 
-class DashboardPage extends StatefulWidget {
-  const DashboardPage({Key? key}) : super(key: key);
 
-  @override
-  State<DashboardPage> createState() => _DashboardPageState();
+import 'package:flutter/cupertino.dart';
+
+import 'cal_page_sizes.dart';
+
+double appBarHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.06) ;
 }
 
-class _DashboardPageState extends State<DashboardPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
-  }
+double appBarFont(BuildContext context) {
+  return (getPageWidth(context) * 0.0041) * (getPageHeight(context) * 0.0041);
 }

@@ -7,6 +7,7 @@ import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Components/login_textfeild.dart';
 import 'package:taxpert_update/Pages/calculator_page.dart';
 import 'package:taxpert_update/Pages/create_account_page.dart';
+import 'package:taxpert_update/Pages/dashboard.dart';
 import 'package:taxpert_update/Sizes/login_page_sizes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -144,7 +145,12 @@ class LoginPage extends StatelessWidget {
 
                         LoginButton(
                             childText:'Login',
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => DashboardPage()),
+                            );
+                          },
                           width: loginButtonWidth(context),
                         ),
 

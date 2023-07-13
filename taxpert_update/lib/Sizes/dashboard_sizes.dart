@@ -20,6 +20,10 @@ double drawerWidth(BuildContext context) {
   return (getPageWidth(context) * 0.15) ;
 }
 
+double rightSideWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.85) ;
+}
+
 double drawerButtonWidth(BuildContext context) {
   return (getPageWidth(context) * 0.14) ;
 }
@@ -44,8 +48,14 @@ double drawerIconMargin(BuildContext context) {
   return (getPageWidth(context) * 0.003) ;
 }
 
-
-
 double miniBoxHeight(BuildContext context) {
   return (getPageHeight(context) * 0.012) ;
+}
+
+double tabBarHeight(BuildContext context) {
+  return (getPageHeight(context) * 0.05) ;
+}
+
+double tabBarWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.83) ;
 }

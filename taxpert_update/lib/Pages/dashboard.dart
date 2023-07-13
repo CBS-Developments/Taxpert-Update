@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Components/tab_bar.dart';
 import 'package:taxpert_update/Drawers/drawer.dart';
+import 'package:taxpert_update/Sizes/cal_page_sizes.dart';
+import 'package:taxpert_update/Sizes/dashboard_sizes.dart';
 
 import '../Components/my_Appbar.dart';
 
@@ -18,7 +21,19 @@ class _DashboardPageState extends State<DashboardPage> {
 
       body: Row(
         children: [
-          DrawerContainer()
+          DrawerContainer(),
+
+          Container(
+            width: rightSideWidth(context),
+            height: getPageHeight(context),
+            color: Colors.green,
+            child: Column(
+              children: [
+                SizedBox(height: miniBoxHeight(context),),
+                TabBarContainer()
+              ],
+            ),
+          )
         ],
       ),
 

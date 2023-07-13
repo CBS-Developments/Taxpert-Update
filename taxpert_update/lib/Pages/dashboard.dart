@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Components/drawer.dart';
 
 import '../Components/my_Appbar.dart';
 
@@ -14,6 +15,12 @@ class _DashboardPageState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: myAppBar(context),
+
+      body: Row(
+        children: [
+          DrawerContainer()
+        ],
+      ),
 
     );
   }

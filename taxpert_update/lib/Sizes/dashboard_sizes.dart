@@ -15,3 +15,7 @@ double appBarFont(BuildContext context) {
 double appBarIconSize(BuildContext context) {
   return (getPageHeight(context) * 0.031) ;
 }
+
+double drawerWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.15) ;
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taxpert_update/Pages/dashboard.dart';
 
 import '../Components/colors.dart';
 import '../Sizes/cal_page_sizes.dart';
@@ -19,7 +20,12 @@ class TPDrawerContainer extends StatelessWidget {
           SizedBox(height: miniBoxHeight(context),),
 
           CustomDrawerButton(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DashboardPage()),
+                );
+              },
               child: Row(
                 children: [
                   Image.asset('Images/icon01.png',

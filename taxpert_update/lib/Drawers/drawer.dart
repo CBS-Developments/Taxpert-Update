@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taxpert_update/Drawers/drawer_button.dart';
+import 'package:taxpert_update/Pages/taxpayer_profile_page.dart';
 import 'package:taxpert_update/Sizes/cal_page_sizes.dart';
 import 'package:taxpert_update/Sizes/dashboard_sizes.dart';
 
@@ -36,7 +37,12 @@ class DrawerContainer extends StatelessWidget {
           SizedBox(height: miniBoxHeight(context),),
 
           CustomDrawerButton(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TaxpayerProfilePage()),
+                );
+              },
               child: Row(
                 children: [
                   Container(

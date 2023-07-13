@@ -12,6 +12,12 @@ class NewRedioContainer extends StatelessWidget {
       color: Colors.white70,
       width: textFWidth(context),
       height: textFHeight(context),
+      child:
+      Row(
+        children: [
+          Text('Gender:',style: TextStyle(color: Colors.green,fontSize: getFontL(context)),)
+        ],
+      ),
 
 
     );

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:stroke_text/stroke_text.dart';
 import 'package:taxpert_update/Components/login_glass_box.dart';
 import 'package:taxpert_update/Components/new_readio_container.dart';
+import 'package:taxpert_update/Pages/login_page.dart';
 
 import '../Components/login_button.dart';
 import '../Components/login_textfeild.dart';
@@ -48,7 +49,7 @@ class CreateAccount extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                  height: sizeBoxXLHeight(context),
+                  height: sizeBoxLHeight(context),
                 ),
                 LoginGlassBox(
                   width: createContWidth(context),
@@ -57,7 +58,7 @@ class CreateAccount extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: sizeBoxXLHeight(context),
+                          height: sizeBoxLHeight(context),
                         ),
                         Text(
                           'Create Account',
@@ -67,19 +68,19 @@ class CreateAccount extends StatelessWidget {
                               fontSize: getFontxXL(context)),
                         ),
                         SizedBox(
-                          height: sizeBoxXLHeight(context),
+                          height: sizeBoxLHeight(context),
                         ),
                         LoginTextField(
                           labelText: "First Name",
                         ),
                         SizedBox(
-                          height: sizeBoxXLHeight(context),
+                          height: sizeBoxLHeight(context),
                         ),
                         LoginTextField(
                           labelText: "Last Name",
                         ),
                         SizedBox(
-                          height: sizeBoxXLHeight(context),
+                          height: sizeBoxLHeight(context),
                         ),
                         NewRedioContainer(
                           groupValueOne: 1,
@@ -92,6 +93,34 @@ class CreateAccount extends StatelessWidget {
                           valueThree: 3,
                           onChangedThree: (int? value) {},
                         ),
+                        SizedBox(
+                          height: sizeBoxLHeight(context),
+                        ),
+
+                        LoginTextField(
+                          labelText: "Mobile Number",
+                        ),
+
+                        SizedBox(
+                          height: sizeBoxLHeight(context),
+                        ),
+
+                        LoginTextField(
+                          labelText: "ID/PP/DL Number",
+                        ),
+
+                        SizedBox(
+                          height: sizeBoxLHeight(context),
+                        ),
+
+                        LoginTextField(
+                          labelText: "Email",
+                        ),
+
+                        SizedBox(
+                          height: sizeBoxLHeight(context),
+                        ),
+
                         LoginButton(
                           width: createButtonWidth(context),
                           childText: 'Create Account',
@@ -107,7 +136,7 @@ class CreateAccount extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               StrokeText(
-                                text: "Don't have an Account?  ",
+                                text: "Already Have an Account?  ",
                                 textStyle: TextStyle(
                                     // fontWeight: FontWeight.bold,
                                     fontSize: getFontXL(context),
@@ -120,16 +149,16 @@ class CreateAccount extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => CreateAccount()),
+                                        builder: (context) => LoginPage()),
                                   );
                                 },
                                 child: StrokeText(
-                                  text: "Create Account",
+                                  text: "Log In",
                                   textStyle: TextStyle(
                                       // fontWeight: FontWeight.bold,
                                       fontSize: getFontXL(context),
                                       color: Colors.white),
-                                  strokeColor: Colors.black,
+                                  strokeColor: Colors.white30,
                                   strokeWidth: 00.8,
                                 ),
                               ),

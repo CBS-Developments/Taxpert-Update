@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'cal_page_sizes.dart';
 
 double createContHeight(BuildContext context) {
-  return (getPageHeight(context) * 0.8) ;
+  return (getPageHeight(context) * 0.97) ;
 }
 
 double createContWidth(BuildContext context) {

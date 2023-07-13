@@ -13,3 +13,7 @@ double createContWidth(BuildContext context) {
 double createButtonWidth(BuildContext context) {
   return (getPageWidth(context) * 0.12) ;
 }
+
+double smallBoxWidth(BuildContext context) {
+  return (getPageWidth(context) * 0.01) ;
+}

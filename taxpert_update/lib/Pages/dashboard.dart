@@ -26,11 +26,18 @@ class _DashboardPageState extends State<DashboardPage> {
           Container(
             width: rightSideWidth(context),
             height: getPageHeight(context),
-            color: Colors.green,
+            color: Colors.white,
             child: Column(
               children: [
                 SizedBox(height: miniBoxHeight(context),),
-                TabBarContainer()
+                TabBarContainer(
+                  child: Text('Taxpayer Profile',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: getFontLarge(context)
+                    ),
+                  ),
+                ),
               ],
             ),
           )

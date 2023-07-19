@@ -59,7 +59,7 @@ class DrawerContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.person_3_outlined,
+                    Icons.person,
                     color: AppColor.highLightGreen,
                     size: drawerIconSize(context),
                   ),
@@ -129,11 +129,15 @@ class DrawerContainer extends StatelessWidget {
           CustomDrawerButton(
               onTap: () {},
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'Images/icon04.png',
-                    height: dashIconHeight(context),
+                  Icon(
+                    Icons.insert_chart_rounded,
+                    color: AppColor.highLightGreen,
+                    size: drawerIconSize(context),
                   ),
+
+                  SizedBox(width: drawerSizeBoxWidth(context),),
                   Text(
                     'Tax Computaion',
                     style: TextStyle(
@@ -149,11 +153,15 @@ class DrawerContainer extends StatelessWidget {
           CustomDrawerButton(
               onTap: () {},
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'Images/icon04.png',
-                    height: dashIconHeight(context),
+                  Icon(
+                    Icons.web_asset_rounded,
+                    color: AppColor.highLightGreen,
+                    size: drawerIconSize(context),
                   ),
+
+                  SizedBox(width: drawerSizeBoxWidth(context),),
                   Text(
                     'Assets',
                     style: TextStyle(
@@ -169,11 +177,15 @@ class DrawerContainer extends StatelessWidget {
           CustomDrawerButton(
               onTap: () {},
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'Images/icon04.png',
-                    height: dashIconHeight(context),
+                  Icon(
+                    Icons.local_activity_rounded,
+                    color: AppColor.highLightGreen,
+                    size: drawerIconSize(context),
                   ),
+
+                  SizedBox(width: drawerSizeBoxWidth(context),),
                   Text(
                     'Liabilities',
                     style: TextStyle(
@@ -189,11 +201,15 @@ class DrawerContainer extends StatelessWidget {
           CustomDrawerButton(
               onTap: () {},
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'Images/icon04.png',
-                    height: dashIconHeight(context),
+                  Icon(
+                    Icons.upload_rounded,
+                    color: AppColor.highLightGreen,
+                    size: drawerIconSize(context),
                   ),
+
+                  SizedBox(width: drawerSizeBoxWidth(context),),
                   Text(
                     'Upload',
                     style: TextStyle(
@@ -209,11 +225,15 @@ class DrawerContainer extends StatelessWidget {
           CustomDrawerButton(
               onTap: () {},
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'Images/icon04.png',
-                    height: dashIconHeight(context),
+                  Icon(
+                    Icons.report,
+                    color: AppColor.highLightGreen,
+                    size: drawerIconSize(context),
                   ),
+
+                  SizedBox(width: drawerSizeBoxWidth(context),),
                   Text(
                     'Report',
                     style: TextStyle(

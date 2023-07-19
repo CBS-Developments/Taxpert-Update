@@ -357,7 +357,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),
-                BlankContainer(),
+                const BlankContainer(),
                 SizedBox(
                   height: MeSizeBoxHeight(context),
                 ),

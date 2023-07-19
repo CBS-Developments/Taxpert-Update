@@ -56,7 +56,7 @@ PreferredSizeWidget myAppBar(BuildContext context) {
           },
           icon: Icon(
             Icons.logout_outlined,
-            color: Colors.white,
+            color: Colors.black,
           ),
           tooltip: 'Logout',
         ),

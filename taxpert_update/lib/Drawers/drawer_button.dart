@@ -15,6 +15,7 @@ class CustomDrawerButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        padding: EdgeInsets.all(drawerIconMargin(context)),
         height: drawerButtonHeight(context),
          width: drawerButtonWidth(context),
         decoration: BoxDecoration(
